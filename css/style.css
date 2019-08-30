@@ -1,0 +1,507 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover, a:focus {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+  width: 90%;
+  max-width: 1220px;
+  margin: 0 auto;
+  position: relative;
+}
+section{
+  padding: 100px 0;
+}
+h2{
+  padding-top: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+/* ----------01.header------------------*/
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+#logo{
+  float: left;
+}
+#logo a img{
+  width: 80px;
+}
+.nav {
+  float: right;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+  color: #333;;
+  display: block;
+  padding: 20px 12px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.nav li a:hover{
+  color: rgb(76, 230, 179);
+  position: relative;
+  top: -5px;
+  box-shadow: 0 5px 10px #333;
+  border-radius: 20px;
+  background-color: rgb(77, 75, 75);
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+/* ----------02.關於紙資源------------------*/
+.bigpic{
+  background-image: url(../images/bigpic.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container_table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container_table_cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.container_table_cell h2 {
+  color: #fff;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+.container_table_cell p{
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  padding: 10px 35px;
+}
+.container_table_cell a{
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(76, 230, 179);
+  
+  padding: 10px 60px;
+  font-size: 25px;
+  border-radius: 20px;
+  margin-top: 20px; 
+}
+.container_table_cell a:hover{
+  position: relative;
+  top: -5px;
+  box-shadow: 0 5px 10px #333;
+  border-radius: 20px;
+  color: rgb(76, 230, 179);
+  background-color: #333;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+.overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ----------03.紙類項目------------------*/
+.col-work {
+  float: left;
+  width: 33.3333333333%;
+  padding: 0 15px;
+}
+.col-work a {
+  display: block;
+  margin-bottom: 14px;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+  transition: .2s linear;
+}
+.col-work a:hover{
+  box-shadow: 0 16px 22px 0 rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+.col-work a h3{
+  display: inline-block;
+  font-size: 60px;
+  color: rgb(40, 177, 131);
+  position: relative;
+  top: -180px;
+  left: 35px;;
+}
+.col-work a p{
+  display: inline-block;
+  padding: 0 15px;
+  color: rgb(40, 177, 131);
+  position: relative;
+  top: -20px;
+}
+/* ----------04.回收紙處理方式------------------*/
+.paper-process{
+  background-color: #f7f7f7;
+}
+.col-left, .col-right {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+.process-intro h3{
+  font-size: 30px;
+  letter-spacing: 20px;
+  margin-bottom: 6px;
+}
+.process-intro h4{
+  font-size: 18px;
+  margin: 15px 0;
+}
+.process-intro p{
+  text-indent: 2em;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+.tip{
+  margin-top: 25px;;
+}
+.tip img{
+  width: 60px;
+  display: inline-block;
+}
+.tip h5{
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  top: -25px;
+}
+/* ----------05.回收紙用途------------------*/
+.outer-box {
+    float: left;
+    width: 350px;;
+    height: 300px;
+    margin-left: 15px;
+    margin-right: 18px;;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 700px;
+    height: 300px;
+    transition: left .5s;
+  }
+  .outer-box:hover .slider-box {
+    left: -350px;
+  }
+  .inner-box {
+    float: left;
+    width: 350px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    color: #FFF;
+  }
+  .left-box h3{
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: -300px;
+  }
+  .right-box h3{
+    font-size: 30px;
+    color: rgb(27, 122, 91);
+    position: relative;
+    top: -300px;
+  }
+/* ----------06.如何為地球做更多------------------*/
+.do-more{
+  background-color:  #f7f7f7;
+}
+.more-inner{
+color: #333;
+text-align: center;
+}
+.more-inner h3{
+  font-size: 25px;
+  margin-bottom: 40px;;
+}
+.more-inner a {
+  color: #333;
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 11px;
+  padding: 12px 49px;
+  display: block;
+  width: 260px;
+  margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 3px;
+
+}
+.more-inner a:hover{
+  background-color: rgb(77, 75, 75);
+  color: rgb(76, 230, 179);
+  transition: all .4s linear;
+}
+.number h3{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 40px;;
+  margin-top: 70px;;
+}
+.col-left-number, .col-right-number{
+  float: left;
+  width: 50%;;
+}
+.col-left-number img{
+  width: 250px;
+  margin-top: 40px;;
+  margin-left: 250px;;
+}
+.col-right-number p{
+font-size: 50px;
+padding-top: 90px;
+}
+.col-right-number a {
+  color: #333;
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 11px;
+  text-align: center;
+  padding: 12px 49px;
+  display: block;
+  width: 260px;
+  margin-top: 22px;
+  letter-spacing: 3px;
+
+}
+.col-right-number a:hover{
+  background-color: rgb(77, 75, 75);
+  color: rgb(76, 230, 179);
+  transition: all .4s linear;
+}
+
+/* ----------07.環保商品------------------*/
+.products{
+  padding-bottom: 0px;
+}
+.product-flip-card {
+  background-color: transparent;
+  float: left;
+  width: 25%;
+  height: 350px;
+  margin-bottom: 150px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* margin-bottom: 150px; */
+  /* text-align: center; */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.product-flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  /* margin-bottom: 150px; */
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  opacity: 0.75;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+.product-content{
+  display: inline-block;
+}
+.product-content h6{
+position: relative;
+top: -335px;
+text-align: center;
+font-size: 30px;
+color: #388cda;
+}
+.product-content p{
+position: relative;
+top: -335px;
+text-align: center;
+padding: 20px;
+font-size: 15px;
+font-weight: bold;
+color: #023361;
+}
+.product-botton{
+  position: relative;
+  top: -290px;
+  left: 33.33333333%;
+  background-color: #3850da;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.products h4{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+/* ----------08.聯絡我們------------------*/
+.contact-form{
+width: 65%;
+margin: 0 auto;
+text-align: center;
+}
+.contact-form .form-input:first-child,
+.contact-form .form-input:nth-child(2){
+float: left;
+width: 50%;
+padding: 0 15px;
+}
+.contact-form .form-input:nth-child(3){
+width: 100%;
+padding: 0 15px;
+}
+.contact-form input.form-style{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 19px;
+  margin-bottom: 12px;
+  outline: none;
+}
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+}
+.form-submit{
+  text-align: left;
+  padding: 0 15px;
+}
+.form-submit input {
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid rgb(77, 75, 75);
+  border-radius: 12px;
+  padding: 15px 60px;
+  margin-top: 16px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  -webkit-transition: .4s linear;
+  -moz-transition: .4s linear;
+  -ms-transition: .4s linear;
+  -o-transition: .4s linear;
+  transition: .4s linear;
+}
+
+.form-submit input:hover {
+  background-color: rgb(77, 75, 75);
+  color: rgb(76, 230, 179);
+}
+/* ----------09.footer------------------*/
+footer{
+  padding: 80px 0;
+  background-color: rgb(77, 75, 75);
+  color: rgb(76, 230, 179);
+  text-align: center;
+}
+.footer-content p{
+line-height: 22px;
+}
+.footer-social-icon a i{
+  color: rgb(76, 230, 179);
+  display: inline-block;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
